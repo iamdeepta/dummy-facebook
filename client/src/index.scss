@@ -1,3 +1,17 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --primary: #1877F2;
+  --light-dark: #373737;
+  --dark: #282828;
+  --gray: #CCCCCC;
+  --dark-gray: #3b3b3b;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

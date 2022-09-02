@@ -1,0 +1,97 @@
+.header{
+    background: var(--dark);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0.5rem 1rem;
+    border-bottom: 0.1rem solid var(--gray);
+    position: sticky;
+    top: 0;
+    z-index: 9;
+
+    .header_left{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 0.4rem;
+        img{
+            width: 2.7rem;
+            height: 2.7rem;
+            cursor: pointer;
+        }
+
+        .header_left_search{
+            position: relative;
+
+            input{
+                outline: none;
+                background: var(--dark-gray);
+                font-size: 1rem;
+                border: none;
+                padding: 0.6rem 1.5rem;
+                border-radius: 2rem;
+                color: var(--gray);
+                padding-left: 2.5rem;
+            }
+
+            .header_left_search_icon{
+                position: absolute;
+                top: 0.6rem;
+                left: 0.9rem;
+                color: var(--gray);
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+    .header_middle{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+
+        .header_middle_menu{
+            color: var(--gray);
+            font-size: 2.2rem;
+            padding: 0.6rem 0.3rem;
+            border-radius: 0.5rem;
+            height: 2.7rem;
+            width: 5rem;
+            cursor: pointer;
+
+            &:hover{
+                background: var(--dark-gray);
+            }
+        }
+
+        .header_middle_menu:nth-child(1){
+            color: var(--primary);
+
+        }
+    }
+
+    .header_right{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 0.5rem;
+
+        .header_right_menu{
+            color: var(--gray);
+            background: var(--dark-gray);
+            border-radius: 50%;
+            padding: 0.6rem;
+            font-size: 2rem;
+            cursor: pointer;
+            width: 2.4rem;
+            height: 2.4rem;
+        }
+
+        img{
+            width: 2.6rem;
+            height: 2.6rem;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+    }
+}
