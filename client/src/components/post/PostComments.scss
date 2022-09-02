@@ -1,0 +1,43 @@
+.post_comments{
+    margin-top: 0.6rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+
+    img{
+        width: 2.1rem;
+        height: 2.1rem;
+        border-radius: 50%;
+    }
+
+    .post_comments_msg{
+
+        .post_comments_msg_content{
+            padding: 0.7rem;
+            background: var(--dark-gray);
+            border-radius: 1.2rem;
+            width: max-content;
+
+            h6{
+                font-size: 0.8rem;
+                color: var(--gray);
+            }
+
+            p{
+                color: var(--gray);
+                font-size: 0.9rem;
+            }
+
+        }
+
+        .post_comments_hour{
+            padding-left: 0.6rem;
+
+            p{
+                color: gray;
+                font-size: 0.7rem;
+            }
+        }
+    }
+}

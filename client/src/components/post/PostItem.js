@@ -4,6 +4,7 @@ import { FiMoreHorizontal } from "react-icons/fi";
 import { AiFillLike, AiOutlineLike } from "react-icons/ai";
 import { BiComment } from "react-icons/bi";
 import { RiShareForwardLine } from "react-icons/ri";
+import PostComments from "./PostComments";
 
 const PostItem = () => {
   return (
@@ -56,7 +57,13 @@ const PostItem = () => {
             </div>
           </div>
 
-          <div className="post_item_comments"></div>
+          <div className="post_item_comments">
+            <div className="post_item_comments_input">
+              <img src="https://picsum.photos/200/300?random=1" alt="profile" />
+              <input type="text" placeholder="Write a comment..." />
+            </div>
+            <PostComments />
+          </div>
         </div>
       </div>
     </>
