@@ -10,6 +10,7 @@
   --dark: #282828;
   --gray: #CCCCCC;
   --dark-gray: #3b3b3b;
+  --darkest: #1c1c1c;
 }
 
 body {
@@ -19,6 +20,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: var(--darkest);
 }
 
 code {
