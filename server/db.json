@@ -1,19 +1,22 @@
 {
   "user": {
-    "username": "joe-adam",
-    "name": "Joe Adam",
-    "profile_picture": ""
+    "id": "8402678390264947301",
+    "username": "deepta",
+    "name": "Deepta Barua",
+    "profile_picture": "https://picsum.photos/200/300?random=1"
   },
+  
   "posts": [
     {
       "id": "8402678390264947303",
       "user": {
-        "username": "adam",
-        "name": "Adam",
-        "profile_picture": ""
+        "username": "delon",
+        "name": "Delon Yen",
+        "profile_picture": "https://picsum.photos/200/300?random=4"
       },
       "posted_on": "1617220982",
       "likes": 10,
+      "comments_count": 2, 
       "liked": true,
       "comments": [
         {
@@ -21,8 +24,145 @@
           "created_at": "1617220982",
           "user": {
             "username": "adam",
-            "name": "Adam",
-            "profile_picture": ""
+            "name": "Adam Smith",
+            "profile_picture": "https://picsum.photos/200/300?random=2"
+          }
+        },
+        {
+          "text": "This is cool!",
+          "created_at": "1617220982",
+          "user": {
+            "username": "rahul",
+            "name": "Rahul Jayn",
+            "profile_picture": "https://picsum.photos/200/300?random=3"
+          }
+        }
+      ]
+    },
+    {
+      "id": "8402678390264947304",
+      "user": {
+        "username": "rashid",
+        "name": "Rashid Khan",
+        "profile_picture": "https://picsum.photos/200/300?random=5"
+      },
+      "posted_on": "1617220982",
+      "likes": 7,
+      "comments_count": 1, 
+      "liked": false,
+      "comments": [
+        {
+          "text": "Stay focused!",
+          "created_at": "1617220982",
+          "user": {
+            "username": "kiernan",
+            "name": "Kiernan Shipka",
+            "profile_picture": "https://picsum.photos/200/300?random=6"
+          }
+        }
+      ]
+    },
+    {
+      "id": "8402678390264947305",
+      "user": {
+        "username": "peggy",
+        "name": "Peggy Carter",
+        "profile_picture": "https://picsum.photos/200/300?random=7"
+      },
+      "posted_on": "1617220982",
+      "likes": 20,
+      "comments_count": 3, 
+      "liked": false,
+      "comments": [
+        {
+          "text": "This is nice.",
+          "created_at": "1617220982",
+          "user": {
+            "username": "tarif",
+            "name": "Tarif Zaman",
+            "profile_picture": "https://picsum.photos/200/300?random=8"
+          }
+        },
+        {
+          "text": "Hey there.",
+          "created_at": "1617220982",
+          "user": {
+            "username": "rahul",
+            "name": "Rahul Jayn",
+            "profile_picture": "https://picsum.photos/200/300?random=3"
+          }
+        },
+        {
+          "text": "Something wrong here.",
+          "created_at": "1617220982",
+          "user": {
+            "username": "yen",
+            "name": "Yennefer",
+            "profile_picture": "https://picsum.photos/200/300?random=9"
+          }
+        }
+      ]
+    },
+    {
+      "id": "8402678390264947306",
+      "user": {
+        "username": "delon",
+        "name": "Delon Yen",
+        "profile_picture": "https://picsum.photos/200/300?random=16"
+      },
+      "posted_on": "1617220982",
+      "likes": 50,
+      "comments_count": 2, 
+      "liked": true,
+      "comments": [
+        {
+          "text": "This is it!",
+          "created_at": "1617220982",
+          "user": {
+            "username": "adam",
+            "name": "Adam Smith",
+            "profile_picture": "https://picsum.photos/200/300?random=2"
+          }
+        },
+        {
+          "text": "I was wondering how to do it.",
+          "created_at": "1617220982",
+          "user": {
+            "username": "yen",
+            "name": "Yennefer",
+            "profile_picture": "https://picsum.photos/200/300?random=9"
+          }
+        }
+      ]
+    },
+    {
+      "id": "8402678390264947307",
+      "user": {
+        "username": "extreme",
+        "name": "Extreme Race",
+        "profile_picture": "https://picsum.photos/200/300?random=20"
+      },
+      "posted_on": "1617220982",
+      "likes": 120,
+      "comments_count": 3, 
+      "liked": false,
+      "comments": [
+        {
+          "text": "Woah I am loving it!",
+          "created_at": "1617220982",
+          "user": {
+            "username": "Danny",
+            "name": "Danny Rezz",
+            "profile_picture": "https://picsum.photos/200/300?random=10"
+          }
+        },
+        {
+          "text": "This is awesome!",
+          "created_at": "1617220982",
+          "user": {
+            "username": "richard",
+            "name": "Richard Flow",
+            "profile_picture": "https://picsum.photos/200/300?random=43"
           }
         }
       ]
