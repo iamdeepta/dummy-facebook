@@ -1,6 +1,6 @@
 import React from "react";
 import "./Header.scss";
-import { BsFacebook, BsMessenger, BsBellFill } from "react-icons/bs";
+import { BsMessenger, BsBellFill } from "react-icons/bs";
 import { BiSearch } from "react-icons/bi";
 import { CgMenuGridO } from "react-icons/cg";
 import { AiFillHome, AiOutlineShop } from "react-icons/ai";

@@ -1,0 +1,35 @@
+.left_sidebar_item {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex: 1;
+      gap: 1rem;
+      border-radius: 0.4rem;
+      padding: 0.4rem 0.4rem;
+      cursor: pointer;
+
+      &:hover {
+        background: var(--dark-gray);
+      }
+
+      .left_sidebar_img {
+    
+        img {
+          width: 2rem;
+          height: 2rem;
+          border-radius: 50%;
+        }
+
+        .left_sidebar_img_icon{
+            color: var(--primary);
+            font-size: 1.8rem;
+        }
+
+      }
+
+      h4 {
+        font-size: 1rem;
+        color: var(--gray);
+        font-weight: bold;
+      }
+    }
