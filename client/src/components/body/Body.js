@@ -1,5 +1,6 @@
 import React from "react";
 import Post from "../post/Post";
+import Users from "../users/Users";
 import "./Body.scss";
 
 const Body = () => {
@@ -7,6 +8,7 @@ const Body = () => {
     <>
       <div className="body">
         <Post />
+        <Users />
       </div>
     </>
   );

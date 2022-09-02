@@ -1,0 +1,42 @@
+.user_item{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 1;
+    gap: 1rem;
+    border-radius: 0.4rem;
+    padding: 0.4rem 0.4rem;
+    cursor: pointer;
+
+    &:hover{
+        background: var(--dark-gray);
+    }
+
+    .user_item_img{
+        position: relative;
+            img{
+                width: 2rem;
+                height: 2rem;
+                border-radius: 50%;
+            }
+
+            .user_item_active{
+                position: absolute;
+                background: green;
+                width: 0.7rem;
+                height: 0.7rem;
+                bottom: 0.1rem;
+                right: 0rem;
+                z-index: 2;
+                border-radius: 50%;
+                border: 0.1rem solid var(--darkest);
+            }
+
+    }
+
+    h4{
+        font-size: 1rem;
+        color: var(--gray);
+        font-weight: bold;
+    }
+}

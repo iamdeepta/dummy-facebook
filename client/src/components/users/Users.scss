@@ -1,0 +1,18 @@
+.users{
+    padding: 0rem 1rem;
+    width: 25%;
+    overflow-y: scroll;
+    height: 90vh;
+
+    .users_header{
+        p{
+            font-size: 1.1rem;
+            color: var(--gray);
+        }
+    }
+
+    .users_list{
+        padding: 1rem 0rem;
+        
+    }
+}
