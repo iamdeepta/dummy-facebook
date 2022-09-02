@@ -3,6 +3,7 @@ import "./Post.scss";
 import { FaVideo } from "react-icons/fa";
 import { BsImages } from "react-icons/bs";
 import { GoSmiley } from "react-icons/go";
+import PostItem from "./PostItem";
 
 const Post = () => {
   return (
@@ -27,6 +28,10 @@ const Post = () => {
               <span>Feeling/activity</span>
             </div>
           </div>
+        </div>
+
+        <div className="post_list">
+          <PostItem />
         </div>
       </div>
     </>
