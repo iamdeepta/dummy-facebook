@@ -117,6 +117,10 @@
                     .post_item_body_bottom_like_icon{
                         color: var(--gray);
                         font-size: 1.2rem;
+
+                        &.fill_like_icon{
+                            color: var(--primary);
+                        }
                         
                         &.comment{
                             margin-top: 0.2rem;
@@ -128,6 +132,11 @@
                         color: var(--gray);
                         font-size: 1rem;
                     }
+
+                    .fill_like{
+                        color: var(--primary);
+                    }
+
                 }
             }
         }

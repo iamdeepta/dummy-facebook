@@ -55,8 +55,17 @@ const PostItem = ({ post }) => {
 
             <div className="post_item_body_bottom_like_comment_share">
               <div className="post_item_body_bottom_like">
-                <AiOutlineLike className="post_item_body_bottom_like_icon" />
-                <span>Like</span>
+                {post.liked === true ? (
+                  <>
+                    <AiFillLike className="post_item_body_bottom_like_icon fill_like_icon" />
+                    <span className="fill_like">Like</span>
+                  </>
+                ) : (
+                  <>
+                    <AiOutlineLike className="post_item_body_bottom_like_icon outline_like_icon" />
+                    <span className="outline_like">Like</span>
+                  </>
+                )}
               </div>
               <div className="post_item_body_bottom_like">
                 <BiComment className="post_item_body_bottom_like_icon comment" />
