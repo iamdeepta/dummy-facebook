@@ -5,10 +5,11 @@
     "name": "Deepta Barua",
     "profile_picture": "https://picsum.photos/200/300?random=1"
   },
-  
+
   "posts": [
     {
       "id": "8402678390264947303",
+      "text": "Adding fuel to the fire, however, was Sri Lanka coach Chris Silverwood's tactics during the first innings of the match in Sharjah. Continuing the practice that earned varied opinions from his stint in England, Silverwood displayed coded signals for Sri Lanka skipper Shanaka – something that didn't go down quite well with many Bangladesh supporters.",
       "user": {
         "username": "delon",
         "name": "Delon Yen",
@@ -16,10 +17,11 @@
       },
       "posted_on": "1617220982",
       "likes": 10,
-      "comments_count": 2, 
+      "comments_count": 2,
       "liked": true,
       "comments": [
         {
+          "id": "8402678390264947308",
           "text": "Hello!",
           "created_at": "1617220982",
           "user": {
@@ -29,6 +31,7 @@
           }
         },
         {
+          "id": "8402678390264947309",
           "text": "This is cool!",
           "created_at": "1617220982",
           "user": {
@@ -41,6 +44,7 @@
     },
     {
       "id": "8402678390264947304",
+      "text": "ReactJS tutorial provides basic and advanced concepts of ReactJS. Currently, ReactJS is one of the most popular JavaScript front-end libraries which has a strong foundation and a large community.",
       "user": {
         "username": "rashid",
         "name": "Rashid Khan",
@@ -48,10 +52,11 @@
       },
       "posted_on": "1617220982",
       "likes": 7,
-      "comments_count": 1, 
+      "comments_count": 1,
       "liked": false,
       "comments": [
         {
+          "id": "8402678390264947310",
           "text": "Stay focused!",
           "created_at": "1617220982",
           "user": {
@@ -64,6 +69,7 @@
     },
     {
       "id": "8402678390264947305",
+      "text": "Next.js is an open-source web development framework created by Vercel enabling React-based web applications with server-side rendering and generating static websites. React documentation mentions Next.js among Recommended Toolchains advising it to developers as a solution when Building a server-rendered website with Node.js. Where traditional React apps can only render their content in the client-side browser, Next.js extends this functionality to include applications rendered on the server-side.",
       "user": {
         "username": "peggy",
         "name": "Peggy Carter",
@@ -71,10 +77,11 @@
       },
       "posted_on": "1617220982",
       "likes": 20,
-      "comments_count": 3, 
+      "comments_count": 3,
       "liked": false,
       "comments": [
         {
+          "id": "8402678390264947311",
           "text": "This is nice.",
           "created_at": "1617220982",
           "user": {
@@ -84,6 +91,7 @@
           }
         },
         {
+          "id": "8402678390264947312",
           "text": "Hey there.",
           "created_at": "1617220982",
           "user": {
@@ -93,6 +101,7 @@
           }
         },
         {
+          "id": "8402678390264947313",
           "text": "Something wrong here.",
           "created_at": "1617220982",
           "user": {
@@ -105,6 +114,7 @@
     },
     {
       "id": "8402678390264947306",
+      "text": "In 2005, Mozilla joined ECMA International, and work started on the ECMAScript for XML (E4X) standard. This led to Mozilla working jointly with Macromedia (later acquired by Adobe Systems), who were implementing E4X in their ActionScript 3 language, which was based on an ECMAScript 4 draft. The goal became standardizing ActionScript 3 as the new ECMAScript 4. To this end, Adobe Systems released the Tamarin implementation as an open source project. However, Tamarin and ActionScript 3 were too different from established client-side scripting, and without cooperation from Microsoft, ECMAScript 4 never reached fruition.",
       "user": {
         "username": "delon",
         "name": "Delon Yen",
@@ -112,10 +122,11 @@
       },
       "posted_on": "1617220982",
       "likes": 50,
-      "comments_count": 2, 
+      "comments_count": 2,
       "liked": true,
       "comments": [
         {
+          "id": "8402678390264947314",
           "text": "This is it!",
           "created_at": "1617220982",
           "user": {
@@ -125,6 +136,7 @@
           }
         },
         {
+          "id": "8402678390264947315",
           "text": "I was wondering how to do it.",
           "created_at": "1617220982",
           "user": {
@@ -137,6 +149,7 @@
     },
     {
       "id": "8402678390264947307",
+      "text": "Street racing is typically an unsanctioned and illegal form of auto racing that occurs on a public road. Racing in the streets is considered an ancient hazard, as horse racing occurred on streets for centuries, and street racing in automobiles is likely as old as the automobile itself. It became especially prevalent during the heyday of hot rodding (1960s), muscle cars (1970s), and Japanese imports (1990s). Since then, it continues to be both popular and hazardous, with deaths of bystanders, passengers, and drivers occurring every year. In the United States, modern street racing traces its roots back to Woodward Avenue, Michigan, in the 1960s when the three main Detroit-based American car companies were producing high-powered performance cars. Since a private racing venue was not always available, street races would be held illegally on public roads.",
       "user": {
         "username": "extreme",
         "name": "Extreme Race",
@@ -144,10 +157,11 @@
       },
       "posted_on": "1617220982",
       "likes": 120,
-      "comments_count": 3, 
+      "comments_count": 3,
       "liked": false,
       "comments": [
         {
+          "id": "8402678390264947316",
           "text": "Woah I am loving it!",
           "created_at": "1617220982",
           "user": {
@@ -157,6 +171,7 @@
           }
         },
         {
+          "id": "8402678390264947317",
           "text": "This is awesome!",
           "created_at": "1617220982",
           "user": {
