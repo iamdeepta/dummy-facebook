@@ -3,9 +3,11 @@
   width: 25%;
 //   overflow-y: scroll;
   height: 90vh;
+  position: sticky;
+  top: 5rem;
 
   .left_sidebar_list {
-    padding: 1rem 0rem;
+    padding: 0rem 0rem;
 
   }
 }
