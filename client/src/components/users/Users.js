@@ -1,8 +1,29 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import UserItem from "./UserItem";
 import "./Users.scss";
+import api from "../../api/baseurl";
 
 const Users = () => {
+  const [users, setUsers] = useState([]);
+
+  //retrieve online users
+  const getUsers = async () => {
+    const response = await api.get("online_users");
+    return response.data;
+  };
+
+  useEffect(() => {
+    const getAllUsers = async () => {
+      const allusers = await getUsers();
+
+      if (allusers) {
+        setUsers(allusers);
+      }
+    };
+
+    getAllUsers();
+  }, []);
+
   return (
     <>
       <div className="users">
@@ -11,20 +32,13 @@ const Users = () => {
         </div>
 
         <div className="users_list">
-          <UserItem />
-          <UserItem />
-          <UserItem />
-          <UserItem />
-          <UserItem />
-          <UserItem />
-          <UserItem />
-          <UserItem />
-          <UserItem />
-          <UserItem />
-          <UserItem />
-          <UserItem />
-          <UserItem />
-          <UserItem />
+          {users.map((user) => {
+            return (
+              <>
+                <UserItem user={user} />
+              </>
+            );
+          })}
         </div>
       </div>
     </>
