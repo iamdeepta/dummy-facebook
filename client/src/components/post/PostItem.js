@@ -5,11 +5,20 @@ import { AiFillLike, AiOutlineLike } from "react-icons/ai";
 import { BiComment } from "react-icons/bi";
 import { RiShareForwardLine } from "react-icons/ri";
 import PostComments from "./PostComments";
+import { useGetCurrentUser } from "../../hooks/useGetCurrentUser";
+import { useEffect } from "react";
 
 const PostItem = ({ post }) => {
   let today_date = new Date().getTime();
 
   let day_diff = (today_date - Number(post.posted_on)) / (1000 * 3600 * 24);
+
+  const { user, getCurrentUser } = useGetCurrentUser();
+
+  //render current user data
+  useEffect(() => {
+    getCurrentUser();
+  }, [getCurrentUser]);
 
   return (
     <>
@@ -62,7 +71,7 @@ const PostItem = ({ post }) => {
 
           <div className="post_item_comments">
             <div className="post_item_comments_input">
-              <img src="https://picsum.photos/200/300?random=1" alt="profile" />
+              <img src={user.profile_picture} alt="profile" />
               <input type="text" placeholder="Write a comment..." />
             </div>
             {post.comments.map((comment) => {

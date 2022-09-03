@@ -5,9 +5,12 @@ import { BsImages } from "react-icons/bs";
 import { GoSmiley } from "react-icons/go";
 import PostItem from "./PostItem";
 import api from "../../api/baseurl";
+import { useGetCurrentUser } from "../../hooks/useGetCurrentUser";
 
 const Post = () => {
   const [text, setText] = useState("");
+
+  const { user, getCurrentUser } = useGetCurrentUser();
 
   const [posts, setPosts] = useState([]);
 
@@ -29,13 +32,18 @@ const Post = () => {
     getAllPosts();
   }, []);
 
+  //render current user data
+  useEffect(() => {
+    getCurrentUser();
+  }, [getCurrentUser]);
+
   //   console.log(posts);
   return (
     <>
       <div className="post">
         <div className="post_input">
           <div className="post_input_up">
-            <img src="https://picsum.photos/200/300?random=1" alt="profile" />
+            <img src={user.profile_picture} alt="profile" />
             <input
               type="text"
               placeholder="What's on your mind, Deepta?"

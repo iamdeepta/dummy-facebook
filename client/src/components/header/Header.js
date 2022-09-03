@@ -7,8 +7,15 @@ import { AiFillHome, AiOutlineShop } from "react-icons/ai";
 import { TbFlag3 } from "react-icons/tb";
 import { FiAirplay } from "react-icons/fi";
 import { HiUserGroup } from "react-icons/hi";
+import { useGetCurrentUser } from "../../hooks/useGetCurrentUser";
+import { useEffect } from "react";
 
 const Header = () => {
+  const { user, getCurrentUser } = useGetCurrentUser();
+
+  useEffect(() => {
+    getCurrentUser();
+  }, [getCurrentUser]);
   return (
     <>
       <div className="header">
@@ -30,7 +37,7 @@ const Header = () => {
           <CgMenuGridO className="header_right_menu" />
           <BsMessenger className="header_right_menu" />
           <BsBellFill className="header_right_menu" />
-          <img src="https://picsum.photos/200/300?random=1" alt="profile" />
+          <img src={user.profile_picture} alt="profile" />
         </div>
       </div>
     </>

@@ -1,21 +1,26 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./LeftSidebar.scss";
 import LeftSidebarItem from "./LeftSidebarItem";
 import { BsPeopleFill, BsClockHistory } from "react-icons/bs";
 import { HiUserGroup } from "react-icons/hi";
 import { AiOutlineShop } from "react-icons/ai";
 import { FiAirplay } from "react-icons/fi";
+import { useGetCurrentUser } from "../../hooks/useGetCurrentUser";
 
 const LeftSidebar = () => {
+  const { user, getCurrentUser } = useGetCurrentUser();
+
+  useEffect(() => {
+    getCurrentUser();
+  }, [getCurrentUser]);
+
   return (
     <>
       <div className="left_sidebar">
         <div className="left_sidebar_list">
           <LeftSidebarItem
-            item={
-              <img src="https://picsum.photos/200/300?random=1" alt="profile" />
-            }
-            item_name={"Deepta Barua"}
+            item={<img src={user.profile_picture} alt="profile" />}
+            item_name={user.username}
           />
           <LeftSidebarItem
             item={<BsPeopleFill className="left_sidebar_img_icon" />}
