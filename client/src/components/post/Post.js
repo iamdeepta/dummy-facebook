@@ -1,12 +1,35 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Post.scss";
 import { FaVideo } from "react-icons/fa";
 import { BsImages } from "react-icons/bs";
 import { GoSmiley } from "react-icons/go";
 import PostItem from "./PostItem";
+import api from "../../api/baseurl";
 
 const Post = () => {
   const [text, setText] = useState("");
+
+  const [posts, setPosts] = useState([]);
+
+  //retrieve posts
+  const getPosts = async () => {
+    const response = await api.get("posts");
+    return response.data;
+  };
+
+  useEffect(() => {
+    const getAllPosts = async () => {
+      const allPosts = await getPosts();
+
+      if (allPosts) {
+        setPosts(allPosts);
+      }
+    };
+
+    getAllPosts();
+  }, []);
+
+  //   console.log(posts);
   return (
     <>
       <div className="post">
@@ -39,7 +62,13 @@ const Post = () => {
         </div>
 
         <div className="post_list">
-          <PostItem />
+          {posts.map((post) => {
+            return (
+              <>
+                <PostItem post={post} key={post.id} />
+              </>
+            );
+          })}
         </div>
       </div>
     </>

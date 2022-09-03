@@ -1,18 +1,18 @@
 import React from "react";
 import "./PostComments.scss";
 
-const PostComments = () => {
+const PostComments = ({ comment }) => {
   return (
     <>
       <div className="post_comments">
-        <img src="https://picsum.photos/200/300?random=1" alt="profile" />
+        <img src={comment.user.profile_picture} alt="profile" />
         <div className="post_comments_msg">
           <div className="post_comments_msg_content">
-            <h6>Daniel Robusto</h6>
-            <p>Good point, but consider removing the last five words.</p>
+            <h6>{comment.user.name}</h6>
+            <p>{comment.text}</p>
           </div>
           <div className="post_comments_hour">
-            <p>2h</p>
+            <p>{comment.created_at}h</p>
           </div>
         </div>
       </div>

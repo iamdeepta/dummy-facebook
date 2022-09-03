@@ -6,16 +6,16 @@ import { BiComment } from "react-icons/bi";
 import { RiShareForwardLine } from "react-icons/ri";
 import PostComments from "./PostComments";
 
-const PostItem = () => {
+const PostItem = ({ post }) => {
   return (
     <>
       <div className="post_item">
         <div className="post_item_header">
           <div className="post_item_header_img">
-            <img src="https://picsum.photos/200/300?random=2" alt="profile" />
+            <img src={post.user.profile_picture} alt="profile" />
             <div className="post_item_header_img_text">
-              <h6>Rahul Baidya</h6>
-              <p>10h</p>
+              <h6>{post.user.name}</h6>
+              <p>{post.posted_on}h</p>
             </div>
           </div>
 
@@ -36,9 +36,9 @@ const PostItem = () => {
             <div className="post_item_body_bottom_like_comment_count">
               <div className="post_item_body_bottom_like_count">
                 <AiFillLike className="post_item_body_bottom_like_count_icon" />
-                <p>23</p>
+                <p>{post.likes}</p>
               </div>
-              <a href="/">20 comments</a>
+              <a href="/">{post.comments.length} comments</a>
             </div>
 
             <div className="post_item_body_bottom_like_comment_share">
@@ -62,7 +62,13 @@ const PostItem = () => {
               <img src="https://picsum.photos/200/300?random=1" alt="profile" />
               <input type="text" placeholder="Write a comment..." />
             </div>
-            <PostComments />
+            {post.comments.map((comment) => {
+              return (
+                <>
+                  <PostComments comment={comment} key={comment.id} />
+                </>
+              );
+            })}
           </div>
         </div>
       </div>
