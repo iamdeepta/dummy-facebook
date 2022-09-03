@@ -1,9 +1,14 @@
+@import 'src/breakpoints';
 .post_item{
     margin-top: 1rem;
     padding: 1rem;
     background: var(--dark);
     border-radius: 0.9rem;
     width: 36vw;
+
+    @include sm{
+        width: 100%;
+    }
 
     .post_item_header{
         display: flex;

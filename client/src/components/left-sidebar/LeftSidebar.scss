@@ -1,3 +1,4 @@
+@import 'src/breakpoints';
 .left_sidebar {
   padding: 0rem 0rem;
   flex-basis: 25%;
@@ -6,8 +7,19 @@
   position: sticky;
   top: 5rem;
 
+  @include sm{
+    position: static;
+  }
+
+
   .left_sidebar_list {
     padding: 0rem 0rem;
 
+    @include sm{
+        display: flex;
+        overflow-x: scroll;
+        width: 93vw;
+    }
   }
+
 }

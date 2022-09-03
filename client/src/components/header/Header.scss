@@ -1,3 +1,4 @@
+@import 'src/breakpoints';
 .header{
     background: var(--dark);
     display: flex;
@@ -9,17 +10,25 @@
     top: 0;
     z-index: 9;
 
+    @include sm{
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
     .header_left{
         display: flex;
         justify-content: flex-start;
         align-items: center;
         gap: 0.4rem;
         flex-basis: 25%;
+
        
         img{
             width: 2.7rem;
             height: 2.7rem;
             cursor: pointer;
+
+        
         }
 
         .header_left_search{
@@ -34,6 +43,10 @@
                 border-radius: 2rem;
                 color: var(--gray);
                 padding-left: 2.5rem;
+
+                @include sm{
+                   display: none;
+                }
             }
 
             .header_left_search_icon{
@@ -42,6 +55,13 @@
                 left: 0.9rem;
                 color: var(--gray);
                 font-size: 1.2rem;
+
+                @include sm{
+                    position: relative;
+                    top: 0.1rem;
+                    left: 0rem;
+                    font-size: 2rem;
+                }
             }
         }
     }
@@ -53,6 +73,19 @@
         gap: 0.5rem;
         flex-basis: 40%;
 
+
+        @include sm{
+            order: 1;
+            flex: 1;
+            justify-content: space-between;
+            margin-top: 1.3rem;
+        }
+
+        @include md{
+            margin-top: 0rem;
+            order: 0;
+        }
+
         .header_middle_menu{
             color: var(--gray);
             font-size: 2.2rem;
@@ -61,6 +94,13 @@
             height: 2.7rem;
             width: 5rem;
             cursor: pointer;
+
+            @include sm{
+                font-size: 2rem;
+                padding: 0 0;
+                height: auto;
+                width: auto;
+            }
 
             &:hover{
                 background: var(--dark-gray);
@@ -80,6 +120,13 @@
         gap: 0.5rem;
         flex-basis: 28%;
 
+        @include sm{
+            flex: 1;
+            justify-content: flex-end;
+        }
+
+        
+
         .header_right_menu{
             color: var(--gray);
             background: var(--dark-gray);
@@ -89,6 +136,11 @@
             cursor: pointer;
             width: 2.4rem;
             height: 2.4rem;
+
+            @include sm{
+                width: 2.7rem;
+                height: 2.7rem;
+            }
         }
 
         img{

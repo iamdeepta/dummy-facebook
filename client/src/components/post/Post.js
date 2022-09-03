@@ -8,8 +8,6 @@ import api from "../../api/baseurl";
 import { useGetCurrentUser } from "../../hooks/useGetCurrentUser";
 
 const Post = () => {
-  const [text, setText] = useState("");
-
   const { user, getCurrentUser } = useGetCurrentUser();
 
   const [posts, setPosts] = useState([]);
@@ -44,11 +42,7 @@ const Post = () => {
         <div className="post_input">
           <div className="post_input_up">
             <img src={user.profile_picture} alt="profile" />
-            <input
-              type="text"
-              placeholder="What's on your mind, Deepta?"
-              onChange={(e) => setText(e.target.value)}
-            />
+            <input type="text" placeholder="What's on your mind, Deepta?" />
           </div>
           <div className="post_input_down">
             <div className="post_input_down_options">

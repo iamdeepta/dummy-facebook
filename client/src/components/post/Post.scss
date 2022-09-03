@@ -1,5 +1,10 @@
+@import 'src/breakpoints';
 .post{
    flex-basis: 40%;
+   @include sm{
+        order: 1;
+        flex-basis: 100%;
+   }
    
     .post_input{
         padding: 1rem;
@@ -7,11 +12,17 @@
         border-radius: 0.9rem;
         width: 36vw;
 
+        @include sm{
+            width: 100%;
+            padding: 0.7rem;
+        }
+
         .post_input_up{
             display: flex;
             justify-content: flex-start;
             align-items: center;
             gap: 1rem;
+            
 
             img{
                 height: 2.7rem;
@@ -38,6 +49,10 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+
+            @include sm{
+                flex-wrap: wrap;
+            }
             
 
             .post_input_down_options{

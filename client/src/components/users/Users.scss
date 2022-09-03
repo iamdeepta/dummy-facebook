@@ -1,3 +1,4 @@
+@import 'src/breakpoints';
 .users{
     padding: 0rem 1rem;
     flex-basis: 25%;
@@ -5,6 +6,11 @@
     height: 90vh;
     position: sticky;
     top: 5rem;
+
+    @include sm{
+        padding: 0;
+        position: static;
+    }
 
     .users_header{
         p{
@@ -15,6 +21,10 @@
 
     .users_list{
         padding: 1rem 0rem;
-        
+        @include sm{
+        display: flex;
+        width: 93vw;
+        overflow-x: scroll;
+    }
     }
 }
