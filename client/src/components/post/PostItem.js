@@ -7,6 +7,10 @@ import { RiShareForwardLine } from "react-icons/ri";
 import PostComments from "./PostComments";
 
 const PostItem = ({ post }) => {
+  let today_date = new Date().getTime();
+
+  let day_diff = (today_date - Number(post.posted_on)) / (1000 * 3600 * 24);
+
   return (
     <>
       <div className="post_item">
@@ -15,7 +19,13 @@ const PostItem = ({ post }) => {
             <img src={post.user.profile_picture} alt="profile" />
             <div className="post_item_header_img_text">
               <h6>{post.user.name}</h6>
-              <p>{post.posted_on}h</p>
+              <p>
+                {day_diff < 1
+                  ? Math.round(day_diff * 24) === 0
+                    ? `${Math.round(day_diff * 24 * 60)}m`
+                    : `${Math.round(day_diff * 24)}h`
+                  : `${Math.round(day_diff)}d`}
+              </p>
             </div>
           </div>
 
@@ -23,14 +33,7 @@ const PostItem = ({ post }) => {
         </div>
 
         <div className="post_item_body">
-          <p>
-            Adding fuel to the fire, however, was Sri Lanka coach Chris
-            Silverwood's tactics during the first innings of the match in
-            Sharjah. Continuing the practice that earned varied opinions from
-            his stint in England, Silverwood displayed coded signals for Sri
-            Lanka skipper Shanaka – something that didn't go down quite well
-            with many Bangladesh supporters.
-          </p>
+          <p>{post.text}</p>
 
           <div className="post_item_body_bottom">
             <div className="post_item_body_bottom_like_comment_count">
