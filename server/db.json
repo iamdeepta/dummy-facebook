@@ -6,6 +6,64 @@
     "profile_picture": "https://picsum.photos/200/300?random=1"
   },
 
+  "online_users": [
+    {
+      "username": "delon",
+      "name": "Delon Yen",
+      "profile_picture": "https://picsum.photos/200/300?random=4"
+    },
+    {
+      "username": "adam",
+      "name": "Adam Smith",
+      "profile_picture": "https://picsum.photos/200/300?random=2"
+    },
+    {
+      "username": "rahul",
+      "name": "Rahul Jayn",
+      "profile_picture": "https://picsum.photos/200/300?random=3"
+    },
+    {
+      "username": "rashid",
+      "name": "Rashid Khan",
+      "profile_picture": "https://picsum.photos/200/300?random=5"
+    },
+    {
+      "username": "kiernan",
+      "name": "Kiernan Shipka",
+      "profile_picture": "https://picsum.photos/200/300?random=6"
+    },
+    {
+      "username": "peggy",
+      "name": "Peggy Carter",
+      "profile_picture": "https://picsum.photos/200/300?random=7"
+    },
+    {
+      "username": "tarif",
+      "name": "Tarif Zaman",
+      "profile_picture": "https://picsum.photos/200/300?random=8"
+    },
+    {
+      "username": "yen",
+      "name": "Yennefer",
+      "profile_picture": "https://picsum.photos/200/300?random=9"
+    },
+    {
+      "username": "extreme",
+      "name": "Extreme Race",
+      "profile_picture": "https://picsum.photos/200/300?random=20"
+    },
+    {
+      "username": "Danny",
+      "name": "Danny Rezz",
+      "profile_picture": "https://picsum.photos/200/300?random=10"
+    },
+    {
+      "username": "richard",
+      "name": "Richard Flow",
+      "profile_picture": "https://picsum.photos/200/300?random=43"
+    }
+  ],
+
   "posts": [
     {
       "id": "8402678390264947303",
